@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm, luxurious neutral base */
+  --color-brand-bg: #fdfbf7;        /* Soft ivory / warm alabaster cream */
+  
+  /* Brand Colors from Screenshot 2026-05-28 125532.png */
+  --color-brand-forest: #1e532f;    /* Deep forest green from the leaf emblem */
+  --color-brand-gold: #bfa15f;      /* The elegant gold/brown from "Peppermint" */
+  --color-brand-dark: #3a3223;      /* Deep brownish-charcoal for highly readable body text */
+  --color-brand-muted: #7c7261;     /* Soft brown-gray for secondary text */
+  
+  /* Typography */
+  --font-display: 'Claire', serif;
+  --font-brand: 'Futura', sans-serif;
+}
+
+@font-face {
+  font-family: Claire;
+  src: url('./assets/fonts/clare.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Futura;
+  src: url('./assets/fonts/futura.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
