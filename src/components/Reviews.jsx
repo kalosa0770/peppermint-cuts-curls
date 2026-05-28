@@ -73,7 +73,7 @@ export default function Reviews() {
         
         {/* Section Title */}
         <div className="space-y-3">
-          <h2 className="text-4xl font-display text-brand-forest font-medium">Reviews</h2>
+          <h2 className="text-4xl font-display text-brand-forest font-medium">What Our Clients Say</h2>
           <div className="w-16 h-[2px] bg-brand-gold/40"></div>
         </div>
 

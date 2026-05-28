@@ -50,7 +50,7 @@ export default function Lookbook() {
           {/* Section Header */}
           <div className="w-full text-center md:text-left">
             <h2 className="text-4xl font-display tracking-tight text-brand-forest font-medium">
-              Gallery
+              Our Gallery
             </h2>
           </div>
 
