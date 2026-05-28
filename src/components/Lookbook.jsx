@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 
 const galleryItems = [
-  { id: 1, img: "https://images.unsplash.com/photo-1605497746444-ac9da58d745a?auto=format&fit=crop&w=400&q=80", alt: "Vibrant multi-tonal sleek hair" },
-  { id: 2, img: "https://images.unsplash.com/photo-1592188657297-c6473609e988?auto=format&fit=crop&w=400&q=80", alt: "Classic sharp bob cut" },
-  { id: 3, img: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=400&q=80", alt: "Long luxurious dark waves" },
-  { id: 4, img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=400&q=80", alt: "Soft texture framing fringe" },
-  { id: 5, img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80", alt: "Bold vibrant magenta styling" },
-  { id: 6, img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80", alt: "Defined high-glow rich curls" },
+  { id: 1, img: "/lady-washing-hair2.jpeg", alt: "Vibrant multi-tonal sleek hair" },
+  { id: 2, img: "/lady-toner.jpeg", alt: "Classic sharp bob cut" },
+  { id: 3, img: "/lady-toner2.jpeg", alt: "Long luxurious dark waves" },
+  { id: 4, img: "/lady-toner3.jpeg", alt: "Soft texture framing fringe" },
+  { id: 5, img: "/lady-toner-4.jpeg", alt: "Bold vibrant magenta styling" },
+  { id: 6, img: "/lady-washing-hair.jpeg", alt: "Defined high-glow rich curls" },
 ];
 
 const containerVariants = {
@@ -37,7 +37,7 @@ export default function Lookbook() {
             className="w-full max-w-[420px] aspect-[4/5]"
           >
             <img 
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
+              src="maniquie2.jpeg" 
               alt="Editorial main portrait lookbook"
               className="w-full h-full object-cover rounded-b-[40px]" 
             />

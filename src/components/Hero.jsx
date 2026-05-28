@@ -2,10 +2,25 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-brand-bg pt-24 px-6 overflow-hidden">
+    <section className="relative min-h-[90vh] md:min-h-screen flex items-center bg-brand-bg pt-24 px-6 overflow-hidden">
       
+      {/* --- ASYMMETRIC HALF-SCREEN BACKGROUND IMAGE LAYER --- */}
+      <div className="absolute top-0 bottom-0 right-0 w-full md:w-1/2 z-0">
+        <img 
+          src="/hero.png" 
+          alt="Premium hair styling showcase background"
+          className="w-full h-full object-cover object-center opacity-100 md:opacity-100 mix-blend-multiply" 
+        />
+        {/* Mobile: Full vertical gradient to protect text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-bg/90 via-brand-bg/40 to-brand-bg md:hidden" />
+        
+        {/* Desktop: Elegant horizontal gradient that transitions the image smoothly into the brand bg */}
+        <div className="hidden md:block absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-brand-bg to-transparent" />
+        <div className="hidden md:block absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-brand-bg/20 to-transparent" />
+      </div>
+
       {/* --- STATIC BRAND ACCENTS & MIRRORED DOT PATTERNS --- */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-10">
         
         {/* TOP LEFT: Soft atmospheric green glow & dot matrix */}
         <div className="absolute -top-16 -left-16 w-[300px] h-[300px] bg-brand-forest/10 rounded-full blur-[60px]" />
@@ -40,22 +55,23 @@ export default function Hero() {
       </div>
       {/* --------------------------------------------------- */}
 
-      <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
+      {/* FOREGROUND WORKSPACE CONTAINER */}
+      <div className="max-w-6xl mx-auto w-full relative z-20">
         
-        {/* Left Column: Text & Content */}
+        {/* Text & Content Left Column Layer */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-6 max-w-lg z-10"
+          className="space-y-6 max-w-lg"
         >
-          <h1 className="text-5xl md:text-6xl font-display tracking-tight leading-[1.1] text-[#957345] uppercase">
+          <h1 className="text-5xl md:text-6xl font-display tracking-tight leading-[1.1] text-brand-forest uppercase">
             Luxurious <br />
-            <span className="font-normal font-brand tracking-wide text-brand-dark block text-4xl md:text-5xl mt-1">
+            <span className="font-normal font-brand tracking-wide text-brand-forest block text-4xl md:text-5xl mt-1">
               Hair For You
             </span>
           </h1>
-          <p className="text-brand-muted text-sm font-brand leading-relaxed max-w-sm">
+          <p className="text-brand-forest text-sm font-brand leading-relaxed max-w-sm">
             Schedule an appointment online for an hair treatment. The salon has comfortable seats and modern music.
           </p>
           <div className="pt-2">
@@ -66,23 +82,6 @@ export default function Hero() {
               Contact Us
             </a>
           </div>
-        </motion.div>
-
-        {/* Right Column: Modern Asymmetric Editorial Portrait */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative w-full h-[50vh] md:h-[70vh] flex justify-center items-center"
-        >
-          {/* Flat, offset background solid container block matching the template rhythm */}
-          <div className="absolute inset-0 bg-brand-gold/10 rounded-b-[40px] md:rounded-b-[80px] translate-x-3 translate-y-3" />
-          
-          <img 
-            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" 
-            alt="Premium hair styling showcase"
-            className="relative z-10 w-full h-full object-cover object-center rounded-b-[40px] md:rounded-b-[80px] shadow-sm"
-          />
         </motion.div>
 
       </div>

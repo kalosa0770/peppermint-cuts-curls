@@ -10,7 +10,7 @@ const reviews = [
         {/* Left Column: Model Image Frame */}
         <div className="md:col-span-5 h-[500px] bg-brand-gold/10 rounded-[2rem] overflow-hidden shadow-md">
           <img 
-            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600&h=800" 
+            src="/lady-beauty.jpeg" 
             alt="Satisfied client" 
             className="w-full h-full object-cover grayscale-[15%]"
           />

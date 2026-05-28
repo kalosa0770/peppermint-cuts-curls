@@ -13,7 +13,7 @@ export default function About() {
       {/* Left Column: Big Editorial Portrait Image */}
       <div className="md:col-span-5 h-[500px] bg-brand-gold/10 rounded-[2rem] overflow-hidden shadow-md">
         <img 
-          src="https://images.unsplash.com/photo-1595959183077-51a77916d9ef?auto=format&fit=crop&q=80&w=600&h=800" 
+          src="/maniquie.jpeg" 
           alt="Natural texture styling" 
           className="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700"
         />

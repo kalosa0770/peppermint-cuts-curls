@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react'; // Cleaned up unused Leaf import
+import { Menu, X } from 'lucide-react'; 
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
@@ -21,13 +21,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-brand-bg/90 backdrop-blur-md border-b border-brand-gold/15 py-3 shadow-sm' 
-        : 'bg-transparent py-5'
+        ? 'top-0 bg-brand-bg/90 backdrop-blur-md border-b border-brand-gold/15 py-3 shadow-sm' 
+        : 'top-0 md:top-10 bg-transparent py-5'
     }`}>
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-        {/* Logo Container - Optimized Scaling */}
+        {/* Logo Container */}
         <a href="#" className="flex items-center group">
           <img 
             src="/ppm-logo.svg" 
