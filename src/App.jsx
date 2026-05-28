@@ -16,12 +16,13 @@ export default function App() {
         <Navbar />
       
       {/* Semantic Main Workspace Content */}
-      <main className="relative z-10 pt-24">
+      <main className="relative z-10 pt-18 md:pt-24">
         <Hero />
+        <Reviews />
         <About />
         <Lookbook />
         <Services />
-        <Reviews />
+        
         <Contact />
       </main>
     </div>

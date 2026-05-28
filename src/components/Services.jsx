@@ -2,8 +2,7 @@ import { motion } from 'framer-motion';
 
 const services = [
   { num: "01", name: "Custom Haircut", desc: "Includes customized consultation, botanical wash, and blowout styling." },
-  { num: "02", name: "Curl Definition", desc: "Hydration treatment and finger-coiling specialized for curl patterns." },
-  { num: "03", name: "Luxury Styling", desc: "Bespoke look transformations designed to showcase movement." },
+  { num: "02", name: "Pedicure & Manicure", desc: "Relaxing and rejuvenating treatment for hands and feet." },
 ];
 
 export default function Services() {
@@ -16,7 +15,7 @@ export default function Services() {
           <div className="w-16 h-[2px] bg-brand-gold/40"></div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {services.map((item, i) => (
             <div key={i} className="bg-white border font-brand border-brand-gold/10 rounded-2xl p-6 space-y-4 shadow-sm hover:border-brand-forest/20 transition-colors">
               <span className="text-2xl font-display font-bold text-brand-gold/60 block">{item.num}</span>

@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] md:min-h-screen flex items-center bg-brand-bg pt-24 px-6 overflow-hidden">
+    <section className="relative min-h-[90vh] md:min-h-screen flex flex-col justify-end md:justify-center md:items-center bg-brand-bg pt-24 md:pb-0 px-6 overflow-hidden">
       
       {/* --- ASYMMETRIC HALF-SCREEN BACKGROUND IMAGE LAYER --- */}
       <div className="absolute top-0 bottom-0 right-0 w-full md:w-1/2 z-0">
         <img 
-          src="/hero.png" 
+          src="./hero.png" 
           alt="Premium hair styling showcase background"
           className="w-full h-full object-cover object-center opacity-100 md:opacity-100 mix-blend-multiply" 
         />
@@ -63,15 +63,15 @@ export default function Hero() {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-6 max-w-lg"
+          className="space-y-6 max-w-lg bg-brand-bg/90 p-6 rounded-[2rem] shadow-2xl shadow-brand-gold/10"
         >
-          <h1 className="text-5xl md:text-6xl font-display tracking-tight leading-[1.1] text-brand-forest uppercase">
+          <h1 className="text-5xl md:text-6xl font-display tracking-tight leading-[1.1] text-brand-dark uppercase">
             Luxurious <br />
             <span className="font-normal font-brand tracking-wide text-brand-forest block text-4xl md:text-5xl mt-1">
               Hair For You
             </span>
           </h1>
-          <p className="text-brand-forest text-sm font-brand leading-relaxed max-w-sm">
+          <p className="text-brand-muted text-sm font-brand leading-relaxed max-w-sm">
             Schedule an appointment online for an hair treatment. The salon has comfortable seats and modern music.
           </p>
           <div className="pt-2">

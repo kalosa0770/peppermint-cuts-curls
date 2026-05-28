@@ -4,7 +4,6 @@ import { Sparkles, Scissors, Wind } from 'lucide-react';
 const features = [
   { icon: Sparkles, title: "Premium Care", desc: "Sign up online for a hair treatment with the best masters of the world." },
   { icon: Scissors, title: "Expert Cuts", desc: "Precision cutting techniques tailored completely to your natural texture." },
-  { icon: Wind, title: "Botanical Silk", desc: "Invigorating scalp scrubs and deep conditioning masks to restore shine." },
 ];
 
 export default function About() {
@@ -26,7 +25,7 @@ export default function About() {
           <div className="w-16 h-[2px] bg-brand-gold/40"></div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {features.map((feat, i) => (
             <div key={i} className="bg-white border font-brand border-brand-gold/10 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-brand-bg rounded-xl flex items-center justify-center mx-auto mb-4 border border-brand-gold/15">
