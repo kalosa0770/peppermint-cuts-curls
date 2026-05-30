@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] md:min-h-screen flex flex-col justify-end md:justify-center md:items-center bg-brand-bg pt-24 md:pb-0 px-6 overflow-hidden">
-      
+
       {/* --- ASYMMETRIC HALF-SCREEN BACKGROUND IMAGE LAYER --- */}
       <div className="absolute top-0 bottom-0 right-0 w-full md:w-1/2 z-0">
-        <img 
-          src="./lady-toner.png" 
+        <img
+          src="./hero.png"
           alt="Premium hair styling showcase background"
-          className="w-full h-full object-cover object-center opacity-100 md:opacity-100 mix-blend-multiply" 
+          className="w-full h-full object-cover object-center opacity-100 md:opacity-100 mix-blend-multiply"
         />
         {/* Mobile: Full vertical gradient to protect text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-brand-bg/90 via-brand-bg/40 to-brand-bg md:hidden" />
-        
+
         {/* Desktop: Elegant horizontal gradient that transitions the image smoothly into the brand bg */}
         <div className="hidden md:block absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-brand-bg to-transparent" />
         <div className="hidden md:block absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-brand-bg/20 to-transparent" />
@@ -21,16 +21,15 @@ export default function Hero() {
 
       {/* --- STATIC BRAND ACCENTS & MIRRORED DOT PATTERNS --- */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-10">
-        
+
         {/* TOP LEFT: Soft atmospheric green glow & dot matrix */}
         <div className="absolute -top-16 -left-16 w-[300px] h-[300px] bg-brand-forest/10 rounded-full blur-[60px]" />
         <div className="absolute top-12 left-12 grid grid-cols-5 gap-3 opacity-40">
           {[...Array(25)].map((_, i) => (
-            <div 
-              key={`tl-${i}`} 
-              className={`w-1.5 h-1.5 rounded-full ${
-                i % 3 === 0 ? 'bg-brand-forest' : 'bg-brand-gold/60'
-              }`} 
+            <div
+              key={`tl-${i}`}
+              className={`w-1.5 h-1.5 rounded-full ${i % 3 === 0 ? 'bg-brand-forest' : 'bg-brand-gold/60'
+                }`}
             />
           ))}
         </div>
@@ -41,11 +40,10 @@ export default function Hero() {
         <div className="absolute -bottom-16 -right-16 w-[300px] h-[300px] bg-brand-gold/10 rounded-full blur-[60px]" />
         <div className="absolute bottom-12 right-12 grid grid-cols-5 gap-3 opacity-40">
           {[...Array(25)].map((_, i) => (
-            <div 
-              key={`br-${i}`} 
-              className={`w-1.5 h-1.5 rounded-full ${
-                i % 3 === 0 ? 'bg-brand-forest' : 'bg-brand-gold/60'
-              }`} 
+            <div
+              key={`br-${i}`}
+              className={`w-1.5 h-1.5 rounded-full ${i % 3 === 0 ? 'bg-brand-forest' : 'bg-brand-gold/60'
+                }`}
             />
           ))}
         </div>
@@ -57,9 +55,9 @@ export default function Hero() {
 
       {/* FOREGROUND WORKSPACE CONTAINER */}
       <div className="max-w-6xl mx-auto w-full relative z-20">
-        
+
         {/* Text & Content Left Column Layer */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
