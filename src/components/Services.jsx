@@ -7,7 +7,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+    <section id="services" className="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center bg-brand-gold/10">
       {/* Left Column: Vertical Numbered Menu Cards */}
       <div className="md:col-span-7 order-2 md:order-1 space-y-8">
         <div className="space-y-3">

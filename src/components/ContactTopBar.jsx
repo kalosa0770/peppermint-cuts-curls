@@ -3,7 +3,7 @@ import { Phone, Clock, MapPin, Zap } from 'lucide-react'; // Zero brand icons im
 
 export default function ContactTopBar() {
   return (
-    <div className="bg-brand-forest text-white/90 text-[10px] md:text-[11px] font-sans tracking-widest uppercase border-b border-white/10 relative z-50 hidden sm:block">
+    <div className="bg-brand-forest/60 text-white/90 text-[10px] md:text-[11px] font-sans tracking-widest uppercase border-b border-white/10 relative z-50 hidden sm:block">
       <div className="max-w-6xl mx-auto px-6 py-2 sm:py-0 sm:h-10 flex sm:flex-row justify-between items-center gap-2 sm:gap-0">
         
         {/* Left Side: Operations Info & Location */}

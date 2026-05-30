@@ -24,7 +24,7 @@ const itemVariants = {
 
 export default function Lookbook() {
   return (
-    <section id="lookbook" className="py-24 bg-brand-bg px-6 overflow-hidden">
+    <section id="lookbook" className="py-24 bg-brand-gold/10 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-12 items-center">
         
         {/* Left Column: Massive Editorial Anchor Portrait as per Screenshot 2026-05-28 131644.png */}
