@@ -7,7 +7,7 @@ export default function Hero() {
       {/* --- ASYMMETRIC HALF-SCREEN BACKGROUND IMAGE LAYER --- */}
       <div className="absolute top-0 bottom-0 right-0 w-full md:w-1/2 z-0">
         <img 
-          src="./hero.png" 
+          src="./lady-toner.png" 
           alt="Premium hair styling showcase background"
           className="w-full h-full object-cover object-center opacity-100 md:opacity-100 mix-blend-multiply" 
         />
